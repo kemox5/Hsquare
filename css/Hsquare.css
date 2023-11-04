@@ -483,7 +483,7 @@ p {
 
 }
 
-@media(max-width:767px){
+@media(max-width:767px) {
     .container-services .row-office .text h3 {
         font-size: 30px;
     }
@@ -496,43 +496,72 @@ p {
     font-size: 24px;
 }
 
-@media(max-width:767px){
+@media(max-width:767px) {
 
-    .container-services .row-office .text ul{
+    .container-services .row-office .text ul {
         font-size: 20px;
     }
 }
- 
 
-.col-sur{
-    
+
+.col-sur {
 }
 
-.col-sur .image1{
+.col-sur .image1 {
     position: relative;
 
 }
 
-.col-sur .image1 img {
-    border-radius: 15%;
-   
-    height: 280px;
-    width: 270px;
-   
+@media(max-width:676px) {
+    .col-sur .image1 {
+        left: 100px;
+    }
 }
 
-.col-sur .image1 .overlay{
+.col-sur .image1 img {
+    border-radius: 15%;
+
+    height: 280px;
+    width: 270px;
+
+}
+
+
+@media(max-width:767px) {
+    .col-sur .image1 img {
+        width: 200px;
+        height: 250px;
+    }
+}
+
+.col-sur .image1 .overlay {
     position: absolute;
     left: -168px;
     top: 55px;
 
 }
 
- .overlay .image2 img {
-    
-    
+@media(max-width:767px){
+    .col-sur .image1 .overlay{
+        left: -100px;
+    }
+
+}
+
+.overlay .image2 img {
+
+
     height: 330px;
     width: 270px;
+}
+
+
+@media(max-width:767px) {
+    .overlay .image2 img {
+
+        height: 290px;
+        width: 200px;
+    }
 }
 
 .r h2 {
@@ -567,18 +596,18 @@ p {
 
 }
 
-.mt-5 .col-6 .image {
+.image {
 
     position: relative;
 }
 
-.mt-5 .col-6 .image img {
+.image img {
     max-width: 100%;
     height: 400px;
 
 }
 
-.mt-5 .col-6 .image .overlay {
+.image .overlay {
 
     position: absolute;
     display: flex;
@@ -591,7 +620,7 @@ p {
 
 }
 
-.mt-5 .col-6 .image .overlay .text2 {
+.image .overlay .text2 {
     color: white;
     text-align: center;
     padding: 20px 55px;
@@ -599,10 +628,8 @@ p {
 
 }
 
-.mt-5 .col-6 img {
-
+.services-section img {
     max-width: 100%;
-    height: 200px;
     padding: 7px;
     border-radius: 15%;
 }
@@ -681,7 +708,11 @@ p {
     font-size: 34px;
 
 }
-
+@media(max-width:767px){
+    .land p{
+        font-size: 25px;
+    }
+}
 
 .bg-3 {
     background-image: url("../images/Artboard\ 3.jpg");
@@ -695,11 +726,11 @@ p {
 }
 
 
-@media(max-width:767px){
-  .text-hr {
-    padding: 16px;
-    margin-top: 20px;
-  }
+@media(max-width:767px) {
+    .text-hr {
+        padding: 16px;
+        margin-top: 20px;
+    }
 }
 
 
@@ -795,12 +826,12 @@ p {
 }
 
 
-    .container-training .row-training .text-t h2 {
-        font-size: 48px;
-        color: white;
-        font-weight: bold;
-        padding-bottom: 30px;
-    }
+.container-training .row-training .text-t h2 {
+    font-size: 48px;
+    color: white;
+    font-weight: bold;
+    padding-bottom: 30px;
+}
 
 
 
@@ -809,7 +840,7 @@ p {
         font-size: 20px;
         margin-top: 20px;
         text-align: center;
-      
+
     }
 }
 
@@ -841,21 +872,22 @@ p {
 
 }
 
-@media(max-width:767px){
-    .container-our h1{
+@media(max-width:767px) {
+    .container-our h1 {
         text-align: center;
-    padding: 43px;
-    padding-bottom: 50px;
-    font-size: 45px;
+        padding: 43px;
+        padding-bottom: 50px;
+        font-size: 45px;
     }
 }
- .bg7 {
+
+.bg7 {
     /* background-image: url("../images/bg7.jpg");
     background-position: 0px;
     background-size: 100% 100%;
     min-height:99px; */
     background: #000;
-} 
+}
 
 
 
@@ -863,7 +895,7 @@ p {
 
 .bg7 img {
     max-width: 100%;
-        max-height: 100%;
+    max-height: 100%;
 }
 
 
