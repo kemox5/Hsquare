@@ -26,54 +26,78 @@
                 <a class="navbar-brand" href="#">
                     <img src="images/logo.png" alt="">
                 </a>
-                <div class="links d-none d-md-block" id="main">
-                    <ul class="navbar-nav  ms-auto mb-2 mb-lg-0">
-                        <li class="nav-item-links active">
-                            <a class="nav-link  p-la-3" href="index.html">Home</a>
-                        </li>
-
-                        <li class="nav-item-links">
-                            <a class="nav-link p-la-3" href="about.html">About us</a>
-                        </li>
-                        <li class="nav-item-links">
-                            <a class="nav-link p-la-3" href="services.html">Services</a>
-                        </li>
-                        <li class="nav-item-links">
-                            <a class="nav-link p-la-3" href="#">partners</a>
-                        </li>
-                        <li class="nav-item-links">
-                            <a class="nav-link p-la-3" href="clients.html">clients</a>
-                        </li>
-
-                        <li class="nav-item-links">
-                            <a class="nav-link p-la-3" href="contact.html">contact us</a>
-                        </li>
-
-                    </ul>
-                </div>
-
-                <div class="AI">
-                    <!-- <ul class="navbar-nav-A ml-1"> -->
-                    <!-- <li class="nav-item"> -->
-                    <a class="nav-link " href="#">عربي</a>
-                    <!-- </li>
-
-                </ul> -->
 
 
-                    <div class="icons">
 
-                        <div class="icon">
-                            <i class="fa-brands fa-facebook-f"></i>
+
+                <div class="navbar-menu d-flex flex-row-reverse flex-lg-row" style="flex-grow: 0.5;">
+
+
+                    <div class="d-block d-lg-none">
+                        <button class="border-0 bg-transparent navbar-toggler">
+                            <i class="fa-solid fa-bars text-light"></i>
+                        </button>
+                    </div>
+
+                    <div
+                        class="justify-content-between flex-row flex-column flex-lg-row d-none d-lg-flex navbar-menu-items">
+
+                        <div class="links" id="main">
+                            <ul class="navbar-nav  ms-auto mb-2 mb-lg-0">
+                                <li class="nav-item-links active">
+                                    <a class="nav-link  p-la-3" href="index.html">Home</a>
+                                </li>
+
+                                <li class="nav-item-links">
+                                    <a class="nav-link p-la-3" href="about.html">About us</a>
+                                </li>
+                                <li class="nav-item-links">
+                                    <a class="nav-link p-la-3" href="#">Services</a>
+                                    <div class="submenu d-none">
+                                        <ul>
+                                            <li class="nav-item-links">
+                                                <a href="">Real-Estate</a>
+                                            </li>
+                                            <li class="nav-item-links">
+                                                <a href="">Marketing</a>
+                                            </li>
+                                            <li class="nav-item-links">
+                                                <a href="">HR services</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="nav-item-links">
+                                    <a class="nav-link p-la-3" href="#">partners</a>
+                                </li>
+                                <li class="nav-item-links">
+                                    <a class="nav-link p-la-3" href="clients.html">clients</a>
+                                </li>
+
+                                <li class="nav-item-links">
+                                    <a class="nav-link p-la-3" href="contact.html">contact us</a>
+                                </li>
+
+                            </ul>
                         </div>
 
+                        <a class="nav-link text-light" href="#">عربي</a>
 
-                        <div class="icon">
-                            <i class="fa-brands fa-linkedin-in"></i>
+
+                        <div class="icons">
+                            <div class="icon">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </div>
+
+                            <div class="icon">
+                                <i class="fa-brands fa-linkedin-in"></i>
+                            </div>
+
                         </div>
-
                     </div>
                 </div>
+
+
 
             </div>
         </nav>
@@ -82,12 +106,14 @@
 
 
         <div class="text">
-            <h1>Together</h1>
-            <h2>"Each One"</h2>
-            <p>Achieme More</p>
+            <div class="container">
+                <h1>Together</h1>
+                <h2>"Each One"</h2>
+                <p>Achieme More</p>
+            </div>
         </div>
 
-        <div class="container first-div-container">
+        <div class="container">
             <div class="row first-div">
                 <div class="col-12 col-md-4 col-lg-4 mt-3  mt-md-0 ">
                     <h3>strong partnership</h3>
@@ -378,6 +404,8 @@
 
         <script src="js/bootstrap.bundle.min.js"></script>
         <script src="js/all.min.js"></script>
+        <script src="js/jquery-3.7.1.min.js"></script>
+        <script src="js/main.js"></script>
 </body>
 
 </html>

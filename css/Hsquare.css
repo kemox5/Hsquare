@@ -24,6 +24,10 @@ body {
     }
 }
 
+.nav-item-links{
+    position: relative;
+}
+
 .nav-item-links .nav-link {
     color: white;
     border-bottom: 3px solid #777;
@@ -48,14 +52,69 @@ body {
 
 }
 
-.navbar .AI .icons {
+.navbar .icons {
     display: flex;
     font-size: 20px;
     color: white;
-
 }
 
-.navbar .AI .icons .icon {
+.navbar .navbar-toggler:focus {
+    border: none;
+    box-shadow: none;
+}
+
+.navbar .navbar-toggler:focus * {
+    color: #ccc
+}
+
+.navbar .navbar-menu {
+    position: relative;
+}
+
+
+.navbar .submenu {
+    list-style: none;
+    background-color: #fff;
+    position: absolute;
+    top: 45px;
+    left: 0;
+    min-width: 120px;
+}
+
+
+.navbar .submenu ul{
+    list-style: none;
+    padding: 0 !important;
+}
+
+
+.navbar .submenu a{
+    color: black;
+    padding: 15px;
+    text-decoration: none;
+    display: block;
+}
+
+.navbar .submenu li{
+    border-bottom: solid 1px #000
+}
+
+.navbar .navbar-menu .navbar-menu-items {
+    flex-grow: 1;
+}
+
+@media(max-width: 992px) {
+    .navbar .navbar-menu.show .navbar-menu-items {
+        position: absolute;
+        right: 0;
+        top: 30px;
+        display: flex !important;
+        background-color: #1d2d34;
+        padding: 5px 30px
+    }
+}
+
+.navbar .icons .icon {
     border: solid 1px;
     border-radius: 50%;
     margin-left: 20px;
@@ -75,12 +134,12 @@ body {
 }
 
 .text {
-    padding: 120px;
+    padding: 120px 0px;
 }
 
 @media(max-width:767px) {
     .text {
-        padding: 40px;
+        padding: 40px 0px;
     }
 
 }
@@ -152,7 +211,7 @@ body {
 
 
 .first-div h3 {
-    font-size: 14px;
+    font-size: 20px;
     font-weight: bold;
     color: #fff;
     text-align: center;
@@ -160,7 +219,7 @@ body {
 
 .first-div p {
     color: #fff;
-    font-size: 13px;
+    font-size: 16px;
     text-align: center;
 }
 
@@ -173,7 +232,7 @@ body {
 }
 
 .mess {
-    padding-top: 50px;
+    padding: 90px 0px;
     text-align: center;
     color: white;
 }
@@ -195,13 +254,13 @@ body {
 }
 
 .mess h2 {
-    font-size: 16px;
-    color: #777;
+    font-size: 18px;
+    color: #fff;
 }
 
 .mess p {
-    font-size: 16px;
-    color: #777;
+    font-size: 18px;
+    color: #fff;
     max-width: 70%;
     margin: auto;
 }
@@ -239,7 +298,7 @@ p {
 
 
 .sec-container h3 {
-    font-size: 13px;
+    font-size: 20px;
     font-weight: bold;
     color: white;
     padding-bottom: 6px;
@@ -253,7 +312,7 @@ p {
 }
 
 .sec-container p {
-    font-size: 13px;
+    font-size: 18px;
     padding: 0 31px;
     line-height: 1.5;
     color: white;
@@ -504,8 +563,7 @@ p {
 }
 
 
-.col-sur {
-}
+.col-sur {}
 
 .col-sur .image1 {
     position: relative;
@@ -541,8 +599,8 @@ p {
 
 }
 
-@media(max-width:767px){
-    .col-sur .image1 .overlay{
+@media(max-width:767px) {
+    .col-sur .image1 .overlay {
         left: -100px;
     }
 
@@ -708,8 +766,9 @@ p {
     font-size: 34px;
 
 }
-@media(max-width:767px){
-    .land p{
+
+@media(max-width:767px) {
+    .land p {
         font-size: 25px;
     }
 }
